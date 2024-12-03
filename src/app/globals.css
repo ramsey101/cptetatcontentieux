@@ -25,3 +25,157 @@ body {
     text-wrap: balance;
   }
 }
+
+.etat{
+  font-size: 10px;
+}
+.entete{
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 150px;
+
+    }
+.titre{
+    display: flex;
+    align-items: center;
+    font: large;
+    font-size: 30px;
+    font-style: italic;
+    color: white;
+    -webkit-text-stroke-width: 1px; 
+    -webkit-text-stroke-color: black;
+    margin-left: 210px;
+    
+}
+
+.l2{
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 15px;
+}
+#cel{
+    font-weight: bold;
+    font-size: 15px;
+}
+.l3{
+    font-weight: bold;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.l4{
+   
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.l5{
+    font-size: 15px;
+    display: flex;
+    justify-content: flex-start;
+}
+#nb1{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 14px;
+}
+.head{
+    background-color: rgb(194, 194, 194);
+    font-weight: bold;
+    margin-left: 220px;
+}
+.info1{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container {
+    display: flex;               
+    align-items: center;         
+  }
+  
+  .text {
+    font-size: 16px;             
+       
+    text-decoration: underline;  
+    margin-right: 10px;          
+  }
+.checkbox {
+    width: 21px;                 
+    height: 21px;
+  }
+  .tablepj {
+ 
+    border-collapse: collapse;
+ 
+  }
+  .tdpj {
+    border: 0.5px solid;
+    vertical-align: top; 
+  }
+
+
+  .col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    height: 100%;
+    padding: 5px;
+    width: 295px;
+  }
+
+  .col div {
+    flex: 1; 
+  }
+
+  .sign{
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+  }
+.tabsign{
+    display: flex;
+    justify-self: flex-end;
+}
+.cazsign{
+    border-collapse: collapse;
+}
+.tdcs{
+    border: 0.5px solid;
+    vertical-align: top; 
+    font-weight: bold;
+}
+
+.colcs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    height: 50px;
+    padding: 5px;
+    width: 150px;
+  }
+  .tdbc{
+    border: 0.5px solid;
+    vertical-align: top; 
+ 
+}
+  .colbc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    height: 70px;
+    padding: 5px;
+    width: 190px;
+    font-size: 13px;
+  }
+
+  .colcs div {
+    flex: 1; 
+  }
+  .sign1{
+ 
+    display: flex;
+    justify-content: space-between;
+  }
