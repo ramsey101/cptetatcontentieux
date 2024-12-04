@@ -5,11 +5,10 @@ import Contenu from "./contenu";
 import { DonneesCorrection } from "@/types/donnesform";
 import Correctionidentite from "./correctionidentite";
 
-type FormcorrectionProps = {
-  mesdatas: DonneesCorrection;
-};
 
-export default function Correction({ mesdatas }: FormcorrectionProps) {
+
+export default function Correction({ mesdatas }:{ mesdatas: DonneesCorrection;
+}) {
   const content = () => {
     return (
       <>
@@ -32,12 +31,7 @@ export default function Correction({ mesdatas }: FormcorrectionProps) {
             <div>
 
               <Correctionidentite
-                nomprenomspv={mesdatas.nomprenomspv}
-                datelieunaisspv={mesdatas.datelieunaisspv}
-                nomprenomsperepv={mesdatas.nomprenomsperepv}
-                nomprenomsmerepv={mesdatas.nomprenomsmerepv}
-                numelecteurpv={mesdatas.numelecteurpv}
-                statupv={mesdatas.statutpv}
+                mesdatas={mesdatas}
               />
             </div>
           </div>

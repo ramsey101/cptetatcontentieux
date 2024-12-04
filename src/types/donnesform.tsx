@@ -29,3 +29,17 @@ export type DonneesForm = {
     codeactuellv?: string;
     libelleactuellv?: string;
   }
+
+  export type DonneesReintegration = DonneesForm & {
+    nomprenomspv?: string;
+    nomprenomsperepv?: string;
+    nomprenomsmerepv?: string;
+    numelecteurpv?: string;
+    statupv?: string;
+    datelieunaisspv?: string;
+   
+  }
+  export type DonneesRadiation = DonneesForm & {
+   nbredossiers?: string;
+   nbrepages?: string;
+  }

@@ -1,10 +1,10 @@
 "use client";
 
-import FormReclamation  from "@/composants/formreclamation";
-import { DonneesForm } from "@/types/donnesform";
+import Reintegration from "@/composants/reintegtration";
+import { DonneesReintegration } from "@/types/donnesform";
 
-const mesdatas: DonneesForm = {
-  titre: "RECEPISSE DE DEPOT DE RECLAMATION",
+const mesdatas: DonneesReintegration = {
+  titre: "Fiche individuelle inscription réintégration d'électeur rejeté par erreur de la lep (motif de rejet avéré erroné)",
   region: "AGNEBY TIASSA",
   departement: "TIASSALE",
   cel: " CESP TIASSALE",
@@ -33,7 +33,7 @@ const mesdatas: DonneesForm = {
 export default function Page() {
   return (<>
   <div className="flex items-center justify-center min-h-screen">
-    <FormReclamation mesdatas={mesdatas} />
+    <Reintegration mesdatas={mesdatas} />
   </div>
  
   </>);
