@@ -1,9 +1,9 @@
 "use client";
 
-import FormReclamation  from "@/composants/formreclamation";
-import { DonneesForm } from "@/types/donnesform";
+import Recepisse from "@/composants/pdfs/recepisse";
+import { DonneesRecepisse } from "@/types/donnesform";
 
-const mesdatas: DonneesForm = {
+const mesdatas: DonneesRecepisse = {
   titre: "RECEPISSE DE DEPOT DE RECLAMATION",
   region: "AGNEBY TIASSA",
   departement: "TIASSALE",
@@ -33,7 +33,7 @@ const mesdatas: DonneesForm = {
 export default function Page() {
   return (<>
   <div className="flex items-center justify-center min-h-screen">
-    <FormReclamation mesdatas={mesdatas} />
+    <Recepisse mesdatas={mesdatas} />
   </div>
  
   </>);

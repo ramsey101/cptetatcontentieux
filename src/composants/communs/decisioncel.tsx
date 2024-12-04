@@ -1,11 +1,9 @@
 'use client';
+import { DonneesDecisioncel } from '@/types/donnesform';
 import React from 'react';
-type DecisioncelProps = {
-    decisioncel: string;
-    argumentdec: string;
-};
 
-export default function Decisioncel( {decisioncel , argumentdec } : DecisioncelProps) {
+
+export default function Decisioncel( {mesdatas}: {mesdatas: DonneesDecisioncel}) {
     return (
         <div>
                 <table>
@@ -16,12 +14,12 @@ export default function Decisioncel( {decisioncel , argumentdec } : DecisioncelP
                     <div className="text">Statut de la decision de la CEL</div>
                     </div>
                     <div className="container">
-                        <p>{decisioncel}</p>
+                        <p>{mesdatas.decisioncel}</p>
                     </div>
                 </div>
                 <table className="argrec">
                     <thead className="arg">Arguments fondant la décision</thead>
-                  <p>{argumentdec}</p>
+                  <p>{mesdatas.argumentdec}</p>
                 </table>
                 <br />
                

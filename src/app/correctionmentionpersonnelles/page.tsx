@@ -1,6 +1,6 @@
 "use client";
 
-import Correction from "@/composants/correction";
+import Correction from "@/composants/pdfs/correction";
 import { DonneesCorrection } from "@/types/donnesform";
 
 const mesdatascorrection: DonneesCorrection = {

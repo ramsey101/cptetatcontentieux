@@ -1,3 +1,4 @@
+
 export type DonneesForm = {
     nomprenomspere?: string;
     nomprenomsmere?: string;
@@ -42,4 +43,27 @@ export type DonneesForm = {
   export type DonneesRadiation = DonneesForm & {
    nbredossiers?: string;
    nbrepages?: string;
+  }
+  export type DonneesReclamations = DonneesForm & {
+   reclamations?: string[];
+  }
+  export type DonneesRecepisse = DonneesForm & {
+   daterecepisse?: string;
+   numrecepisse?: string;
+   cel?: string;
+  }
+  export type DonneesCarto = DonneesForm & {
+
+  }
+  export type DonneesDecisioncel = DonneesForm & {
+    datedecision?: string;
+  }
+  export type DonneesReclamant = DonneesForm & {
+   
+  }
+  export type DonneesPersonnevisee = DonneesForm & {
+   
+  }
+  export type DonneesReintegrationomis = DonneesForm & {
+   
   }

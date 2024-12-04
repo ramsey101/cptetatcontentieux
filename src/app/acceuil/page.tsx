@@ -1,6 +1,6 @@
 "use client";
 
-import FormReclamation  from "@/composants/formreclamation";
+import FormReclamation  from "@/composants/pdfs/formreclamation";
 import { DonneesForm } from "@/types/donnesform";
 
 const mesdatas: DonneesForm = {

@@ -1,5 +1,5 @@
 "use client";
-import Contenu from "./contenu";
+import Contenu from "../contenu";
 import { DonneesRadiation } from "@/types/donnesform";
 
 

@@ -28,7 +28,7 @@ export default function Correctionidentite({ mesdatas }: { mesdatas: DonneesCorr
                       <div className="text">Statut de la personne visee :</div>
                   </div>
                   <div className="container">
-                   {/* <p>{mesdatas.statupv}</p> */}
+                   <p>{mesdatas.statutpv}</p>
                   </div>
                 </div>
               </div>

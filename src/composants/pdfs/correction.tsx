@@ -1,9 +1,9 @@
 "use client";
-import Carto from "./carto";
-import Inforec from "./inforec";
-import Contenu from "./contenu";
+import Carto from "../communs/carto";
+import Inforec from "../communs/inforec";
+import Contenu from "../contenu";
 import { DonneesCorrection } from "@/types/donnesform";
-import Correctionidentite from "./correctionidentite";
+import Correctionidentite from "../communs/correctionidentite";
 
 
 
@@ -18,9 +18,7 @@ export default function Correction({ mesdatas }:{ mesdatas: DonneesCorrection;
           </div>
           <div>
             <Carto
-              region={mesdatas.region}
-              departement={mesdatas.departement}
-              cel={mesdatas.cel}
+              mesdatas={mesdatas}
             />
             <Inforec
               ordre={mesdatas.ordre}

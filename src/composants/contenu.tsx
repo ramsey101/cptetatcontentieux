@@ -1,6 +1,7 @@
 "use client";
 
 import { Button } from "antd";
+import Link from "next/link";
 
 import ReactDOMServer from "react-dom/server";
 
@@ -12,7 +13,7 @@ export default function Contenu({ children }: ContenuProps) {
 
     const opt = {
         margin: 1,
-        filename: "Annexe 41.pdf",
+        filename: "document.pdf",
         image: { type: "jpeg", quality: 0.98 },
         html2canvas: { scale: 2 },
         jsPDF: { unit: "in", format: "letter", orientation: "portrait" },
@@ -34,6 +35,10 @@ export default function Contenu({ children }: ContenuProps) {
             <Button  type="primary" onClick={handlePrint}>
               Imprimer
             </Button>
+            <br />
+            <Link href="/">
+            <Button type="default">Retour à l accueil</Button>
+          </Link>
             <br />
           </div>
         </div>

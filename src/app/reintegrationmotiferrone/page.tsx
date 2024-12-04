@@ -1,6 +1,6 @@
 "use client";
 
-import Reintegration from "@/composants/reintegtration";
+import Reintegration from "@/composants/pdfs/reintegtration";
 import { DonneesReintegration } from "@/types/donnesform";
 
 const mesdatas: DonneesReintegration = {

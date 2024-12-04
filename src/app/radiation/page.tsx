@@ -1,6 +1,6 @@
 "use client";
 
-import Radiation from "@/composants/radiation";
+import Radiation from "@/composants/pdfs/radiation";
 import { DonneesRadiation } from "@/types/donnesform";
 
 const mesdatas: DonneesRadiation = {
