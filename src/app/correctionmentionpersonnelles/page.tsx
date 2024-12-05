@@ -1,7 +1,7 @@
 "use client";
 
 import Correction from "@/composants/pdfs/correction";
-import { DonneesCorrection } from "@/types/donnesform";
+import { DonneesCorrection } from "@/types/donneescorrection";
 
 const mesdatascorrection: DonneesCorrection = {
   titre: "Fiche Individuelle De Correction de mention personnelles",

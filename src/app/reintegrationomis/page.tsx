@@ -1,7 +1,7 @@
 "use client";
 
 import ReintegrationOmis from "@/composants/pdfs/reintegrationomis";
-import { DonneesReintegrationomis } from "@/types/donnesform";
+import { DonneesReintegrationomis } from "@/types/donneesreintegrationomis";
 
 const mesdatas: DonneesReintegrationomis = {
   titre: "RECEPISSE DE DEPOT DE RECLAMATION",

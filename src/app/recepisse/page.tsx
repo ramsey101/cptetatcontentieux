@@ -1,7 +1,7 @@
 "use client";
 
 import Recepisse from "@/composants/pdfs/recepisse";
-import { DonneesRecepisse } from "@/types/donnesform";
+import { DonneesRecepisse } from "@/types/donneesrecepisse";
 
 const mesdatas: DonneesRecepisse = {
   titre: "RECEPISSE DE DEPOT DE RECLAMATION",

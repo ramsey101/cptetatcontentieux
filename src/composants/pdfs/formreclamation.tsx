@@ -20,7 +20,7 @@ export default function FormReclamation({
     return (
       <>
         <Entete titre={mesdatas.titre} />
-        <Carto mesdatas={mesdatas} />
+        <Carto region={mesdatas.region} departement={mesdatas.departement} cel={mesdatas.cel} />
         <Inforec
           ordre={mesdatas.ordre}
           dateform={mesdatas.dateform}
@@ -35,11 +35,21 @@ export default function FormReclamation({
           numelecteur={mesdatas.numelecteur}
           refrecep={mesdatas.refrecep}
         />
-        <Personnevisee mesdatas={mesdatas} />
+        <Personnevisee 
+          nomprenomspv={mesdatas.nomprenomspv}
+          datelieunaisspv={mesdatas.datelieunaisspv}
+          numelecteurpv={mesdatas.numelecteurpv}
+          statutpv={mesdatas.statutpv} 
+          nomprenomsmerepv={mesdatas.nomprenomsmerepv}
+          nomprenomsperepv={mesdatas.nomprenomsperepv}
+           />
         <Argumentrec argumentrec={mesdatas.argument} />
         <Piecejointe piecesjointes={mesdatas.piecesjointes} />
         <Signrecep />
-        <Decisioncel mesdatas={mesdatas} />
+        <Decisioncel 
+          decisioncel={mesdatas.decisioncel} 
+          argumentdec={mesdatas.argumentdec} 
+        />
       </>
     );
   };

@@ -1,7 +1,7 @@
 "use client";
 
 import Radiation from "@/composants/pdfs/radiation";
-import { DonneesRadiation } from "@/types/donnesform";
+import { DonneesRadiation } from "@/types/donneesradiation";
 
 const mesdatas: DonneesRadiation = {
   titre: "RECEPISSE DE DEPOT DE RECLAMATION",
@@ -28,6 +28,11 @@ const mesdatas: DonneesRadiation = {
   datelieunaisspv: "17/12/2022",
   decisioncel: "Irrecevabilité ou Acceptation ou Rejet ou Mise en instance(sursis à statuer)",
   argumentdec: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.",
+  numelec: "jfjf",
+  nomrad: "M. FABIO",
+  prenomrad: "kkfkf",
+  datenaissrad: "17/12/2022",
+  motifrad:"jfjfjf"
 };
 
 export default function Page() {

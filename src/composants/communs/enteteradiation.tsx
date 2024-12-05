@@ -1,6 +1,6 @@
 'use client';
 
-import { DonneesRadiation } from "@/types/donnesform";
+import { DonneesRadiation } from "@/types/donneesradiation";
 import React from "react";
 
 export default function Enteteradiation ({mesdatas} : {mesdatas : DonneesRadiation}){

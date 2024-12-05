@@ -1,8 +1,19 @@
 'use client'
 import { Table } from "antd";
-import { DonneesRadiation } from "@/types/donnesform";
 
-export default function Tabreclamation ({mesdatas} : {mesdatas : DonneesRadiation}){
+export type TabreclamationProps = {
+  numord? : number,
+  objetrec? : string
+  nomprenomsrec? : string,
+  datenaissrec? : string,
+  lieunaissrec? : string,
+  nomprenomspv?: string,
+  datenaisspv?: string,
+  lieunaisspv?: string
+  numelec?: string
+}
+
+export default function Tabreclamation ( { numord, objetrec, nomprenomsrec, datenaissrec, lieunaissrec, nomprenomspv, datenaisspv, lieunaisspv } : TabreclamationProps) {
 
     const columns = [
         {

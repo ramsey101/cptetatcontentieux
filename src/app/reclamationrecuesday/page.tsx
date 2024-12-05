@@ -1,7 +1,7 @@
 "use client";
 
 import Reclamationsrecuesday from "@/composants/pdfs/reclamationrecuesday";
-import { DonneesReclamations } from "@/types/donnesform";
+import { DonneesReclamations } from "@/types/donneesreclamation";
 
 const mesdatas: DonneesReclamations = {
   titre: "Liste journaliere des reclamation recues",

@@ -1,9 +1,9 @@
 'use client';
-import { DonneesDecisioncel } from '@/types/donnesform';
+
 import React from 'react';
 
 
-export default function Signatureradiation( {mesdatas}: {mesdatas: DonneesDecisioncel}) {
+export default function Signatureradiation() {
     return (
         <div>
                 <p>Signataire</p>

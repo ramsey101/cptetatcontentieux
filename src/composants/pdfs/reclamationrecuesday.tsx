@@ -1,8 +1,9 @@
 "use client";
+import { DonneesReclamations } from "@/types/donneesreclamation";
 import Entete from "../communs/entete";
 import Tabreclamation from "../communs/tabreclamation";
 import Contenu from "../contenu";
-import { DonneesReclamations } from "@/types/donnesform";
+
 
 
 
@@ -12,7 +13,15 @@ export default function Reclamationsrecuesday({ mesdatas }:{ mesdatas: DonneesRe
     return (
       <>
         <Entete titre={mesdatas.titre} />
-        <Tabreclamation mesdatas={mesdatas} />
+        <Tabreclamation 
+          objetrec={mesdatas.objetrec}
+          nomprenomsrec={mesdatas.nomprenomsrec}
+          datenaissrec={mesdatas.datenaissrec}
+          lieunaissrec={mesdatas.lieunaissrec}
+          nomprenomspv={mesdatas.nomprenomspv}
+          datenaisspv={mesdatas.datenaisspv}
+          lieunaisspv={mesdatas.lieunaisspv}
+           />
       </>
     );
   };

@@ -1,7 +1,7 @@
 "use client";
 
 import Reintegration from "@/composants/pdfs/reintegtration";
-import { DonneesReintegration } from "@/types/donnesform";
+import { DonneesReintegration } from "@/types/donneesreintegration";
 
 const mesdatas: DonneesReintegration = {
   titre: "Fiche individuelle inscription réintégration d'électeur rejeté par erreur de la lep (motif de rejet avéré erroné)",

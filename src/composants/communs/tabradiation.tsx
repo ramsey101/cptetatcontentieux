@@ -1,8 +1,16 @@
 'use client'
 import { Table } from "antd";
-import { DonneesRadiation } from "@/types/donnesform";
+export type TabradiationProps = {
+  numordre? : number;
+  numelec? : string;
+  daterad? : string;
+  nomrad? : string;
+  prenomrad? : string;
+  datenaissrad? : string;
+  motifrad? : string;
+}
 
-export default function Tabradiation ({mesdatas} : {mesdatas : DonneesRadiation}){
+export default function Tabradiation ({ numordre, numelec, daterad, nomrad, prenomrad, datenaissrad, motifrad } : TabradiationProps) {
 
     const columns = [
         {

@@ -1,6 +1,6 @@
 "use client";
 
-import { DonneesReintegration } from "@/types/donnesform";
+import { DonneesReintegration } from "@/types/donneesreintegration";
 import Contenu from "../contenu";
 import Personnevisee from "../communs/personnevisee";
 import Entetehoriz from "../communs/entetehoriz";
@@ -12,7 +12,14 @@ export default function Reintegration({mesdatas}:{mesdatas: DonneesReintegration
     return (
       <>
       <Entetehoriz titre={mesdatas.titre} />
-      <Personnevisee mesdatas={mesdatas} />
+      <Personnevisee 
+          nomprenomspv={mesdatas.nomprenomspv}
+          datelieunaisspv={mesdatas.datelieunaisspv}
+          numelecteurpv={mesdatas.numelecteurpv}
+          statutpv={mesdatas.statutpv} 
+          nomprenomsmerepv={mesdatas.nomprenomsmerepv}
+          nomprenomsperepv={mesdatas.nomprenomsperepv}
+           />
       <Signrecep />
       </>
     );

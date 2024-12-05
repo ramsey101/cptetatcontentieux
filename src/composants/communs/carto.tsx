@@ -1,16 +1,20 @@
 'use client';
 
-import { DonneesCarto } from "@/types/donnesform";
+export type CartoProps = { 
+    region?: string;
+    departement?: string;
+    cel?: string
+};
 
-export default function Carto({mesdatas}:{mesdatas: DonneesCarto}) {
+export default function Carto({region , departement , cel} : CartoProps) {
     return (
             
             <div>
                 <div className="l2">
-                <div>REGION:{mesdatas.region}</div>
-                <div>DEPARTEMENT:{mesdatas.departement}</div>
+                <div>REGION:{region}</div>
+                <div>DEPARTEMENT:{departement}</div>
                 </div>
-                <div id="cel">COMMISSION ELECTORALE LOCALE : {mesdatas.cel}
+                <div id="cel">COMMISSION ELECTORALE LOCALE : {cel}
                 </div>
             </div>
 );

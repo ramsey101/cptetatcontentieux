@@ -1,6 +1,6 @@
 'use client';
 
-import { DonneesCorrection } from "@/types/donnesform";
+import { DonneesCorrection } from "@/types/donneescorrection";
 
 
 export default function Correctionidentite({ mesdatas }: { mesdatas: DonneesCorrection }) {
