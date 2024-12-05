@@ -43,9 +43,11 @@ export type DonneesForm = {
   export type DonneesRadiation = DonneesForm & {
    nbredossiers?: string;
    nbrepages?: string;
+   daterad?:string;
   }
   export type DonneesReclamations = DonneesForm & {
    reclamations?: string[];
+   datereclamations?: string[];
   }
   export type DonneesRecepisse = DonneesForm & {
    daterecepisse?: string;
@@ -64,6 +66,6 @@ export type DonneesForm = {
   export type DonneesPersonnevisee = DonneesForm & {
    
   }
-  export type DonneesReintegrationomis = DonneesForm & {
-   
+  export type DonneesReintegrationomis = DonneesReintegration & {
+    motif?: string;
   }

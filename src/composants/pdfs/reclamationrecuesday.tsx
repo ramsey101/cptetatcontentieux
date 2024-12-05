@@ -1,4 +1,6 @@
 "use client";
+import Entete from "../communs/entete";
+import Tabreclamation from "../communs/tabreclamation";
 import Contenu from "../contenu";
 import { DonneesReclamations } from "@/types/donnesform";
 
@@ -9,18 +11,8 @@ export default function Reclamationsrecuesday({ mesdatas }:{ mesdatas: DonneesRe
   const content = () => {
     return (
       <>
-        <div className="etat">
-          <div className="entete">
-            <p> {mesdatas.titre}</p>
-          </div>
-          <div>
- 
-       
-            <div>
-
-            </div>
-          </div>
-        </div>
+        <Entete titre={mesdatas.titre} />
+        <Tabreclamation mesdatas={mesdatas} />
       </>
     );
   };

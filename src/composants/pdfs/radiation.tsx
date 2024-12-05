@@ -1,26 +1,25 @@
 "use client";
 import Contenu from "../contenu";
 import { DonneesRadiation } from "@/types/donnesform";
+import Entete from "../communs/entete";
+import Enteteradiation from "../communs/enteteradiation";
+import Tabradiation from "../communs/tabradiation";
+import Signatureradiation from "../communs/signradiation";
 
-
-
-export default function Radiation({ mesdatas }:{ mesdatas: DonneesRadiation;
+export default function Radiation({
+  mesdatas,
+}: {
+  mesdatas: DonneesRadiation;
 }) {
+
+
   const content = () => {
     return (
       <>
-        <div className="etat">
-          <div className="entete">
-            <p> {mesdatas.titre}</p>
-          </div>
-          <div>
- 
-       
-            <div>
-
-            </div>
-          </div>
-        </div>
+        <Entete titre={mesdatas.titre} />
+        <Enteteradiation mesdatas={mesdatas} />
+        <Tabradiation mesdatas={mesdatas} />
+        <Signatureradiation mesdatas={mesdatas} />
       </>
     );
   };

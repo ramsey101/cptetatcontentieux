@@ -4,36 +4,25 @@ import Inforec from "../communs/inforec";
 import Contenu from "../contenu";
 import { DonneesCorrection } from "@/types/donnesform";
 import Correctionidentite from "../communs/correctionidentite";
+import Entete from "../communs/entete";
 
-
-
-export default function Correction({ mesdatas }:{ mesdatas: DonneesCorrection;
+export default function Correction({
+  mesdatas,
+}: {
+  mesdatas: DonneesCorrection;
 }) {
   const content = () => {
     return (
       <>
-        <div className="etat">
-          <div className="entete">
-            <p> {mesdatas.titre}</p>
-          </div>
-          <div>
-            <Carto
-              mesdatas={mesdatas}
-            />
-            <Inforec
-              ordre={mesdatas.ordre}
-              dateform={mesdatas.dateform}
-              nomlv={mesdatas.nomlv}
-              typerec={mesdatas.typerec}
-            />
-            <div>
-
-              <Correctionidentite
-                mesdatas={mesdatas}
-              />
-            </div>
-          </div>
-        </div>
+        <Entete titre={mesdatas.titre} />
+        <Carto mesdatas={mesdatas} />
+        <Inforec
+          ordre={mesdatas.ordre}
+          dateform={mesdatas.dateform}
+          nomlv={mesdatas.nomlv}
+          typerec={mesdatas.typerec}
+        />
+        <Correctionidentite mesdatas={mesdatas} />
       </>
     );
   };
