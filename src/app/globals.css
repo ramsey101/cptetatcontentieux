@@ -29,13 +29,7 @@ body {
 .etat{
   font-size: 10px;
 }
-.entete{
-    color: rgb(0, 0, 0);
-    font-weight: bold;
-    font-size: 20px;
-    margin-left: 150px;
 
-    }
 .titre{
     display: flex;
     align-items: center;
@@ -186,12 +180,20 @@ body {
     justify-content: space-between;
     font-weight: bold;
     font-size: 12px;
-}
+  }
+  .cartofr {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 18px;
+  }
 .entete{
   color: rgb(0, 0, 0);
   font-weight: bold;
   font-size: 20px;    
   text-align: center;
+  margin-right: auto;
+  margin-left: auto;
   }
   .inforeclamation{
   

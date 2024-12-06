@@ -22,14 +22,11 @@ export default function Personnevisee({
       <div>
         <span className="head">PERSONNE VISEE</span>
       </div>
-      <div className="info1">
+      <div >
         <div>Nom Prenoms(s) : {nomprenomspv} </div>
         <div>Date et lieu de naissance : {datelieunaisspv} </div>
-      </div>
-      <div className="info1">
         <div>Nom Prenoms(s) Père: {nomprenomsperepv}</div>
         <div>Nom Prenoms(s) Mère : {nomprenomsmerepv}</div>
-      </div>
       <div> N° électeur (identifiant unique): {numelecteurpv}</div>
       <div className="l5">
         <div >
@@ -38,6 +35,7 @@ export default function Personnevisee({
         <div >
           <p>{statutpv}</p>
         </div>
+      </div>
       </div>
       <br />
     </div>

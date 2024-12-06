@@ -1,6 +1,5 @@
 "use client";
 import Reclamant from "../communs/reclamant";
-import Carto from "../communs/carto";
 import Inforec from "../communs/inforec";
 import Personnevisee from "../communs/personnevisee";
 import Argumentrec from "../communs/argumentrec";
@@ -10,6 +9,7 @@ import Decisioncel from "../communs/decisioncel";
 import Contenu from "../contenu";
 import { DonneesForm } from "@/types/donnesform";
 import Entete from "../communs/entete";
+import Cartofr from "../communs/cartofr";
 
 export default function FormReclamation({
   mesdatas,
@@ -24,7 +24,7 @@ export default function FormReclamation({
           <p> FORMULAIRE DE SUIVI DE RECLAMATION</p>
           <br />
         </div>
-        <Carto
+        <Cartofr
           region={mesdatas.region}
           departement={mesdatas.departement}
           cel={mesdatas.cel}

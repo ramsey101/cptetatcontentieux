@@ -7,11 +7,11 @@ export type enteteProps = {
 
 export default function Entete() {
   return (
-    <div className="flex flex-row">
+    <div className="flex justify-between">
       <div>
-        <Image src="/logocei.png" alt="ceilogo" className="mx-auto p-0 mb-5" width={200} height={100} />
+        <Image src="/logocei3.png" alt="ceilogo"  width={150} height={50} />
       </div>
-      <div>
+      <div className="">
         <p>Republique de COTE D IVOIRE</p>
         <p>Union - Discipline - Travail</p>
       </div>
