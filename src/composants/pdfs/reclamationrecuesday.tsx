@@ -2,6 +2,7 @@
 import { DonneesReclamations } from "@/types/donneesreclamation";
 import Tabreclamation from "../communs/tabreclamation";
 import Contenu from "../contenu";
+import Carto from "../communs/carto";
 
 
 
@@ -15,6 +16,11 @@ export default function Reclamationsrecuesday({ mesdatas }:{ mesdatas: DonneesRe
           <p> LISTE JOURNALIERE DES RECLAMATIONS RECUES</p>
           <br />
         </div>
+        <Carto 
+          region={mesdatas.region}
+          departement={mesdatas.departement}
+          cel={mesdatas.cel}
+          />
         <Tabreclamation 
           objetrec={mesdatas.objetrec}
           nomprenomsrec={mesdatas.nomprenomsrec}
@@ -23,7 +29,7 @@ export default function Reclamationsrecuesday({ mesdatas }:{ mesdatas: DonneesRe
           nomprenomspv={mesdatas.nomprenomspv}
           datenaisspv={mesdatas.datenaisspv}
           lieunaisspv={mesdatas.lieunaisspv}
-           />
+          />
       </>
     );
   };

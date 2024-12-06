@@ -5,6 +5,7 @@ import React from "react";
 
 export default function Enteteradiation ({mesdatas} : {mesdatas : DonneesRadiation}){
     return (
+        <>
         <div>
             <ul>
                 <li>CEL: {mesdatas.cel}</li>
@@ -13,6 +14,8 @@ export default function Enteteradiation ({mesdatas} : {mesdatas : DonneesRadiati
                 <li>Nombre de pages: {mesdatas.nbrepages}</li>
             </ul>
         </div>
+        <br />
+        </>
         
     )
 }

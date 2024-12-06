@@ -25,26 +25,25 @@ export default function Correctionidentitenew({}) {
     <div>
       <div>
         <span className="head">
-          Correction sur l identite de la personne visee
+          Correction sur l identite 
         </span>
       </div>
       <div className="info1">
-        <div>Nom Prenoms(s) : {} </div>
-        <div>Date et lieu de naissance : {}</div>
+        <div>Nom  : {} </div>
+        <div>Prenom  : {} </div>
+        <div>Nom de jeune fille  : {} </div>
+        <div>Sexe: {}</div>
+        <div>Date de naissance : {}</div>
+        <div>Lieu de naissance : {}</div>
       </div>
       <div className="info1">
-        <div>Nom Prenoms(s) Père: {}</div>
-        <div>Nom Prenoms(s) Mère : {}</div>
+        <div>Profession: {}</div>
+        <div>Nom du père : {}</div>
+        <div>Prénom du père : {}</div>
+        <div>Nom de la mère : {}</div>
+        <div>Prénom de la mère : {}</div>
       </div>
-      <div> N° électeur (identifiant unique): {}</div>
-      <div className="l5">
-        <div className="container">
-          <div className="text">Statut de la personne visee :</div>
-        </div>
-        <div className="container">
-          <p>{}</p>
-        </div>
-      </div>
+      <br />
     </div>
   );
 }

@@ -15,15 +15,12 @@ export default function ReintegrationOmis({
       <>
         <div className="entete">
           <p>
-            {" "}
             FICHE INDIVIDUELLE DE REINTEGRATION D'ELECTEUR REJETÉ PAR ERREUR DE
             LA LEP (OMIS)
           </p>
           <br />
         </div>
-
-         <Inforeintegration /> 
-       
+        <Inforeintegration />
         <Signaturebureaucel />
       </>
     );

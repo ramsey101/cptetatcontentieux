@@ -16,17 +16,20 @@ export default function Correction({
     return (
       <>
         <div className="entete">
-          <p> FICHE INDIVIDUELLE DE CORRECTION DES MENTIONS PERSONNELLES</p>
+          <p> CORRECTION DE MENTIONS PERSONNELLES SUR LA LISTE ELECTORALE</p>
+          <br />
+          <p> FICHE INDIVIDUELLE</p>
           <br />
         </div>
-        <Carto region={mesdatas.region} departement={mesdatas.departement} cel={mesdatas.cel} />
-        <Infocorrection ordre={""} nomlv={""}         
+        <Carto
+          region={mesdatas.region}
+          departement={mesdatas.departement}
+          cel={mesdatas.cel}
         />
-        <Changementlv 
-        />
-        <Correctionidentitenew 
-         />
-         <Signaturebureaucel />
+        <Infocorrection ordre={""} nomlv={""} />
+        <Changementlv />
+        <Correctionidentitenew />
+        <Signaturebureaucel />
       </>
     );
   };

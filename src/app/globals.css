@@ -84,7 +84,8 @@ body {
 .head{
     background-color: rgb(194, 194, 194);
     font-weight: bold;
-    margin-left: 220px;
+    
+    text-transform: capitalize;
 }
 .info1{
     display: flex;

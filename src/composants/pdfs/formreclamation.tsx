@@ -19,11 +19,16 @@ export default function FormReclamation({
   const content = () => {
     return (
       <>
-      <div className="entete">
+        <Entete />
+        <div className="entete">
           <p> FORMULAIRE DE SUIVI DE RECLAMATION</p>
           <br />
         </div>
-        <Carto region={mesdatas.region} departement={mesdatas.departement} cel={mesdatas.cel} />
+        <Carto
+          region={mesdatas.region}
+          departement={mesdatas.departement}
+          cel={mesdatas.cel}
+        />
         <Inforec
           ordre={mesdatas.ordre}
           date={mesdatas.date}
@@ -38,20 +43,20 @@ export default function FormReclamation({
           numelecteur={mesdatas.numelecteurrec}
           refrecep={mesdatas.refrecep}
         />
-        <Personnevisee 
+        <Personnevisee
           nomprenomspv={mesdatas.nomprenomspv}
           datelieunaisspv={mesdatas.datelieunaisspv}
           numelecteurpv={mesdatas.numelecteurpv}
-          statutpv={mesdatas.statutpv} 
+          statutpv={mesdatas.statutpv}
           nomprenomsmerepv={mesdatas.nomprenomsmerepv}
           nomprenomsperepv={mesdatas.nomprenomsperepv}
-           />
+        />
         <Argumentrec argumentrec={mesdatas.argumentrec} />
         <Piecejointe piecesjointes={mesdatas.piecesjointes} />
         <Signrecep />
-        <Decisioncel 
-          decisioncel={mesdatas.decisioncel} 
-          argumentdec={mesdatas.argumentdec} 
+        <Decisioncel
+          decisioncel={mesdatas.decisioncel}
+          argumentdec={mesdatas.argumentdec}
         />
       </>
     );

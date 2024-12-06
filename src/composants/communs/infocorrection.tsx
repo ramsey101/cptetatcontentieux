@@ -1,28 +1,29 @@
-'use client';
+"use client";
 type InforeclamationProps = {
-    ordre : string
-    date? : string
-    numelecteurpv?: string;
-  
-    nomlv : string
-    typerec? : string
-}
+  ordre: string;
+  date?: string;
+  numelecteurpv?: string;
+  nomlv: string;
+  typerec?: string;
+};
 
-export default function Infocorrection({ordre , date , nomlv, typerec} :InforeclamationProps) {
+export default function Infocorrection({
+  ordre,
+  date,
+  numelecteurpv,
+}: InforeclamationProps) {
   return (
     <div>
-        <div className="l3">
-        <div>N° ordre:{ordre}</div>
-        <div>Date:{date}</div>
-        <div>Lieu de vote:{nomlv}</div>
-        </div>
-        <div className="l4">
-        <div className="container">(1)Type de réclamation:</div>
-        <div className="container">
-            <p>{typerec}</p>
-        </div>
-        </div>
+      <div className="l3">
+        <div>N° ordre: {ordre}</div>
+        <div>N° electeur: {numelecteurpv}</div>
+        <div>Date: {date}</div>
+        <div>Nom : </div>
+        <div>Prenom: </div>
+        <div>Date de naissance: </div>
+        <div>Lieu de naissance: </div>
+      </div>
+      <br />
     </div>
-  )
+  );
 }
-

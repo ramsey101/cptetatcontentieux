@@ -1,7 +1,6 @@
 "use client";
 import Contenu from "../contenu";
 import { DonneesRadiation } from "@/types/donneesradiation";
-import Entete from "../communs/entete";
 import Enteteradiation from "../communs/enteteradiation";
 import Tabradiation from "../communs/tabradiation";
 import Signatureradiation from "../communs/signradiation";

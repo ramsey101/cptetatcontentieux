@@ -25,26 +25,18 @@ export default function Changementlv({}) {
     <div>
       <div>
         <span className="head">
-          Correction sur l identite de la personne visee
+           CHANGEMENT DU LIEU DE VOTE
         </span>
       </div>
       <div className="info1">
-        <div>Nom Prenoms(s) : {} </div>
-        <div>Date et lieu de naissance : {}</div>
+        <div>Code de 12 chiffres de l actuel LV: {} </div>
+        <div>Code de 12 chiffres du nouveau LV: {}</div>
       </div>
       <div className="info1">
-        <div>Nom Prenoms(s) Père: {}</div>
-        <div>Nom Prenoms(s) Mère : {}</div>
+        <div>Libelle de l actuel LV: {}</div>
+        <div>Libelle du nouveau LV: {}</div>
       </div>
-      <div> N° électeur (identifiant unique): {}</div>
-      <div className="l5">
-        <div className="container">
-          <div className="text">Statut de la personne visee :</div>
-        </div>
-        <div className="container">
-          <p>{}</p>
-        </div>
-      </div>
+      <br />
     </div>
   );
 }
