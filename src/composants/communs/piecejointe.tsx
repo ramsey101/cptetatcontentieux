@@ -5,19 +5,25 @@ type PiecejointeProps = {
 };
 export default function Piecejointe({ piecesjointes }: PiecejointeProps) {
   return (
-    <table className="tablepj">
-      <thead>
-        <tr>
-          <th>Pièce Jointes</th>
-        </tr>
-      </thead>
-      <tbody>
-        {piecesjointes.map((element, index) => (
-          <tr key={index}>
-            <td className="border border-gray-300 px-4 py-2"> {index + 1} - {element}</td>
+    <>
+      <table className="tablepj">
+        <thead>
+          <tr>
+            <th>Pièce Jointes</th>
           </tr>
-        ))}
-      </tbody>
-    </table>
+        </thead>
+        <tbody>
+          {piecesjointes.map((element, index) => (
+            <tr key={index}>
+              <td className="border border-gray-300 px-4 py-2">
+                {" "}
+                {index + 1} - {element}
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+      <br />
+    </>
   );
 }

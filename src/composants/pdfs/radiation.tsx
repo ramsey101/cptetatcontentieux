@@ -14,7 +14,10 @@ export default function Radiation({
   const content = () => {
     return (
       <>
-        <Entete titre={mesdatas.titre} />
+        <div className="entete">
+          <p> LISTE RECAPITULATIVE DES RADIATIONS Á OPERER</p>
+          <br />
+        </div>
         <Enteteradiation mesdatas={mesdatas} />
         <Tabradiation
           numelec={mesdatas.numelec}

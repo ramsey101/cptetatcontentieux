@@ -2,7 +2,6 @@
 import Carto from "../communs/carto";
 import Contenu from "../contenu";
 import { DonneesCorrection } from "@/types/donneescorrection";
-import Entete from "../communs/entete";
 import Correctionidentitenew from "../communs/correctionidentitenew";
 import Changementlv from "../communs/changementlv";
 import Infocorrection from "../communs/infocorrection";
@@ -16,7 +15,10 @@ export default function Correction({
   const content = () => {
     return (
       <>
-        <Entete titre={mesdatas.titre} />
+        <div className="entete">
+          <p> FICHE INDIVIDUELLE DE CORRECTION DES MENTIONS PERSONNELLES</p>
+          <br />
+        </div>
         <Carto region={mesdatas.region} departement={mesdatas.departement} cel={mesdatas.cel} />
         <Infocorrection ordre={""} nomlv={""}         
         />

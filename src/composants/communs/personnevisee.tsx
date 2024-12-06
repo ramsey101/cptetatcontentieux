@@ -32,13 +32,14 @@ export default function Personnevisee({
       </div>
       <div> N° électeur (identifiant unique): {numelecteurpv}</div>
       <div className="l5">
-        <div className="container">
+        <div >
           <div className="text">Statut de la personne visee :</div>
         </div>
-        <div className="container">
+        <div >
           <p>{statutpv}</p>
         </div>
       </div>
+      <br />
     </div>
   );
 }

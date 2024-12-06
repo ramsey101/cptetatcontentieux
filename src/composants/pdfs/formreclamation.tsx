@@ -19,7 +19,10 @@ export default function FormReclamation({
   const content = () => {
     return (
       <>
-        <Entete titre={mesdatas.titre} />
+      <div className="entete">
+          <p> FORMULAIRE DE SUIVI DE RECLAMATION</p>
+          <br />
+        </div>
         <Carto region={mesdatas.region} departement={mesdatas.departement} cel={mesdatas.cel} />
         <Inforec
           ordre={mesdatas.ordre}

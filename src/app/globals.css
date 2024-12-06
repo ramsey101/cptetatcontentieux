@@ -186,4 +186,16 @@ body {
     font-weight: bold;
     font-size: 12px;
 }
+.entete{
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 20px;    
+  text-align: center;
+  }
+  .inforeclamation{
+  
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+}
 

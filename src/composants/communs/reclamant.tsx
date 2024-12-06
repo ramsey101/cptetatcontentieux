@@ -38,6 +38,7 @@ export default function Reclamant({
           centre de recensement)* : {refrecep}{" "}
         </div>
       </div>
+      <br />
     </div>
   );
 }

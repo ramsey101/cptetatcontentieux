@@ -1,6 +1,5 @@
 "use client";
 import { DonneesReclamations } from "@/types/donneesreclamation";
-import Entete from "../communs/entete";
 import Tabreclamation from "../communs/tabreclamation";
 import Contenu from "../contenu";
 
@@ -12,7 +11,10 @@ export default function Reclamationsrecuesday({ mesdatas }:{ mesdatas: DonneesRe
   const content = () => {
     return (
       <>
-        <Entete titre={mesdatas.titre} />
+         <div className="entete">
+          <p> LISTE JOURNALIERE DES RECLAMATIONS RECUES</p>
+          <br />
+        </div>
         <Tabreclamation 
           objetrec={mesdatas.objetrec}
           nomprenomsrec={mesdatas.nomprenomsrec}

@@ -2,9 +2,8 @@
 
 import { DonneesReintegrationomis } from "@/types/donneesreintegrationomis";
 import Contenu from "../contenu";
-import Personnevisee from "../communs/personnevisee";
-import Signrecep from "../communs/signrecep";
-import Entetehoriz from "../communs/entetehoriz";
+import Inforeintegration from "../communs/inforeintegration";
+import Signaturebureaucel from "../communs/signaturebureaucel";
 
 export default function ReintegrationOmis({
   mesdatas,
@@ -13,18 +12,20 @@ export default function ReintegrationOmis({
 }) {
   const content = () => {
     return (
-    <>
-    <Entetehoriz titre={mesdatas.titre} />
-    <Personnevisee 
-          nomprenomspv={mesdatas.nomprenomspv}
-          datelieunaisspv={mesdatas.datelieunaisspv}
-          numelecteurpv={mesdatas.numelecteurpv}
-          statutpv={mesdatas.statutpv} 
-          nomprenomsmerepv={mesdatas.nomprenomsmerepv}
-          nomprenomsperepv={mesdatas.nomprenomsperepv}
-           />
-    <Signrecep />
-    </>
+      <>
+        <div className="entete">
+          <p>
+            {" "}
+            FICHE INDIVIDUELLE DE REINTEGRATION D'ELECTEUR REJETÉ PAR ERREUR DE
+            LA LEP (OMIS)
+          </p>
+          <br />
+        </div>
+
+         <Inforeintegration /> 
+       
+        <Signaturebureaucel />
+      </>
     );
   };
   return <Contenu>{content()}</Contenu>;
