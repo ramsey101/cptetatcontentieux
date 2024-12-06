@@ -23,16 +23,16 @@ export default function FormReclamation({
         <Carto region={mesdatas.region} departement={mesdatas.departement} cel={mesdatas.cel} />
         <Inforec
           ordre={mesdatas.ordre}
-          dateform={mesdatas.dateform}
+          date={mesdatas.date}
           nomlv={mesdatas.nomlv}
           typerec={mesdatas.typerec}
         />
         <Reclamant
-          nomprenom={mesdatas.nomprenom}
-          datelieunaiss={mesdatas.datelieunaiss}
-          nomprenomspere={mesdatas.nomprenomspere}
-          nomprenomsmere={mesdatas.nomprenomsmere}
-          numelecteur={mesdatas.numelecteur}
+          nomprenom={mesdatas.nomprenomrec}
+          datelieunaiss={mesdatas.datelieunaissrec}
+          nomprenomspere={mesdatas.nomprenomspererec}
+          nomprenomsmere={mesdatas.nomprenomsmererec}
+          numelecteur={mesdatas.numelecteurrec}
           refrecep={mesdatas.refrecep}
         />
         <Personnevisee 
@@ -43,7 +43,7 @@ export default function FormReclamation({
           nomprenomsmerepv={mesdatas.nomprenomsmerepv}
           nomprenomsperepv={mesdatas.nomprenomsperepv}
            />
-        <Argumentrec argumentrec={mesdatas.argument} />
+        <Argumentrec argumentrec={mesdatas.argumentrec} />
         <Piecejointe piecesjointes={mesdatas.piecesjointes} />
         <Signrecep />
         <Decisioncel 

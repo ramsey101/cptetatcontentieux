@@ -1,4 +1,5 @@
 "use client";
+import Carto from "../communs/carto";
 import Entete from "../communs/entete";
 import Tabreclamation from "../communs/tabreclamation";
 import Contenu from "../contenu";
@@ -14,6 +15,7 @@ export default function Reclamationsrecues({
       <>
       
           <Entete titre={mesdatas.titre} />
+          <Carto region={mesdatas.region} departement={mesdatas.departement} cel={mesdatas.cel} />
           <Tabreclamation 
           objetrec={mesdatas.objetrec}
           nomprenomsrec={mesdatas.nomprenomsrec}

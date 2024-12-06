@@ -10,7 +10,7 @@ const mesdatascorrection: DonneesCorrection = {
   cel: " CESP KORHOGO",
   ordre: "ORDRE 125NC2",
   dateform: "13/12/2024",
-  nomlv: "Epp Binguebougou",
+  nomactuelv: "Epp Binguebougou",
   typerec: "RECTIFICATION",
   datelieunaiss: "17/12/1989",
   nomprenom: "M. FABIO NANWOYA",

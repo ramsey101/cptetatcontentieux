@@ -1,35 +1,19 @@
 export type DonneesReclamations = {
+  
+  titre: string;
+  region: string;
+  departement: string;
+  cel: string;
+  date: string;
+  ordre: string;
   objetrec: string;
   nomprenomsrec: string;
   datenaissrec: string;
   lieunaissrec: string;
+  nomprenomspv: string;
+  datelieunaisspv?: string;
   datenaisspv: string;
   lieunaisspv: string;
-  nomprenomspere?: string;
-  nomprenomsmere?: string;
-  numelecteur?: string;
-  refrecep?: string;
-  typerec?: string;
-  nomprenomspv?: string;
-  datelieunaisspv?: string;
-  nomprenomsperepv?: string;
-  nomprenomsmerepv?: string;
-  numelecteurpv?: string;
-  statutpv?: string;
-  argument?: string;
-  datelieunaiss?: string;
-  decisioncel?: string;
-  argumentdec?: string;
-  nomprenom?: string;
-  nomlv?: string;
-  dateform?: string;
-  ordre?: string;
-  cel?: string;
-  titre?: string;
-  region?: string;
-  departement?: string;
-  piecesjointes?: string[];
-  sex?: string;
-  reclamations?: string[];
-  datereclamations?: string[];
+  numelecteurpv: string;
+  daterecl?: string;
 }

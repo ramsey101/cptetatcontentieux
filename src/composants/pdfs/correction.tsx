@@ -18,11 +18,10 @@ export default function Correction({
         <Carto region={mesdatas.region} departement={mesdatas.departement} cel={mesdatas.cel} />
         <Inforec
           ordre={mesdatas.ordre}
-          dateform={mesdatas.dateform}
-          nomlv={mesdatas.nomlv}
-          typerec={mesdatas.typerec}
+          nomlv={mesdatas.nomactuelv}
         />
-        <Correctionidentite mesdatas={mesdatas} />
+        <Correctionidentite 
+         />
       </>
     );
   };

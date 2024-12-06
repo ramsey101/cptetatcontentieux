@@ -1,17 +1,19 @@
 'use client';
-type InforecProps = {
+type InforeclamationProps = {
     ordre : string
-    dateform : string
+    date? : string
+    numelecteurpv?: string;
+  
     nomlv : string
-    typerec : string
+    typerec? : string
 }
 
-export default function Inforec({ordre , dateform , nomlv, typerec} :InforecProps) {
+export default function Inforeclamation({ordre , date , nomlv, typerec} :InforeclamationProps) {
   return (
     <div>
         <div className="l3">
         <div>N° ordre:{ordre}</div>
-        <div>Date:{dateform}</div>
+        <div>Date:{date}</div>
         <div>Lieu de vote:{nomlv}</div>
         </div>
         <div className="l4">

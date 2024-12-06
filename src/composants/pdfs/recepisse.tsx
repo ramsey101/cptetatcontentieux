@@ -23,19 +23,19 @@ export default function Recepisse({
         <Carto region={mesdatas.region} departement={mesdatas.departement} cel={mesdatas.cel} />
         <Inforec
           ordre={mesdatas.ordre}
-          dateform={mesdatas.dateform}
+          daterecl={mesdatas.daterecl}
           nomlv={mesdatas.nomlv}
           typerec={mesdatas.typerec}
         />
         <Reclamant
-          nomprenom={mesdatas.nomprenom}
-          datelieunaiss={mesdatas.datelieunaiss}
-          nomprenomspere={mesdatas.nomprenomspere}
-          nomprenomsmere={mesdatas.nomprenomsmere}
-          numelecteur={mesdatas.numelecteur}
+          nomprenom={mesdatas.nomprenomrec}
+          datelieunaiss={mesdatas.datelieunaissrec}
+          nomprenomspere={mesdatas.nomprenomspererec}
+          nomprenomsmere={mesdatas.nomprenomsmererec}
+          numelecteur={mesdatas.numelecteurrec}
           refrecep={mesdatas.refrecep}
         />
-                <Personnevisee 
+          <Personnevisee 
           nomprenomspv={mesdatas.nomprenomspv}
           datelieunaisspv={mesdatas.datelieunaisspv}
           numelecteurpv={mesdatas.numelecteurpv}
@@ -43,7 +43,7 @@ export default function Recepisse({
           nomprenomsmerepv={mesdatas.nomprenomsmerepv}
           nomprenomsperepv={mesdatas.nomprenomsperepv}
            />
-        <Argumentrec argumentrec={mesdatas.argument} />
+        <Argumentrec argumentrec={mesdatas.argumentrec} />
         <Piecejointe piecesjointes={mesdatas.piecesjointes} />
         <Signrecep />
       </>
