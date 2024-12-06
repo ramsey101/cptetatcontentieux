@@ -179,3 +179,11 @@ body {
     display: flex;
     justify-content: space-between;
   }
+  /* Mise a jour à appliquer*/
+  .carto{
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 12px;
+}
+

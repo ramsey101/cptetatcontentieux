@@ -14,17 +14,32 @@ export default function Tabradiation ({ numordre, numelec, daterad, nomrad, pren
 
     const columns = [
         {
-          title: "Name",
+          title: "Numero d'ordre",
           dataIndex: "name",
           key: "name",
         },
         {
-          title: "Age",
+          title: "Numero d'electeur",
           dataIndex: "age",
           key: "age",
         },
         {
-          title: "Address",
+          title: "Nom",
+          dataIndex: "address",
+          key: "address",
+        },
+        {
+          title: "Prenoms",
+          dataIndex: "address",
+          key: "address",
+        },
+        {
+          title: "Date de naissance",
+          dataIndex: "address",
+          key: "address",
+        },
+        {
+          title: "Motif de radiation",
           dataIndex: "address",
           key: "address",
         },

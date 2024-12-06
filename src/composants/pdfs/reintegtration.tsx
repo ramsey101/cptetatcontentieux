@@ -5,6 +5,8 @@ import Contenu from "../contenu";
 import Personnevisee from "../communs/personnevisee";
 import Entetehoriz from "../communs/entetehoriz";
 import Signrecep from "../communs/signrecep";
+import Persreintegre from "../communs/persreintegre";
+import Inforeintegration from "../communs/inforeintegration";
 
 
 export default function Reintegration({mesdatas}:{mesdatas: DonneesReintegration} ) {
@@ -12,14 +14,8 @@ export default function Reintegration({mesdatas}:{mesdatas: DonneesReintegration
     return (
       <>
       <Entetehoriz titre={mesdatas.titre} />
-      <Personnevisee 
-          nomprenomspv={mesdatas.nomprenomspv}
-          datelieunaisspv={mesdatas.datelieunaisspv}
-          numelecteurpv={mesdatas.numelecteurpv}
-          statutpv={mesdatas.statutpv} 
-          nomprenomsmerepv={mesdatas.nomprenomsmerepv}
-          nomprenomsperepv={mesdatas.nomprenomsperepv}
-           />
+      <Inforeintegration 
+      />
       <Signrecep />
       </>
     );
