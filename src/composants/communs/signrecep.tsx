@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Signrecep() {
   return (
-    <div>
+    <div className="text-xs">
       <div className="sign mb-2">
         <div>Signature du Réclamant</div>
         <div>Equipe CEL de réception (Nom - Prénoms)</div>

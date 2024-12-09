@@ -18,18 +18,21 @@ export default function Reclamant({
   refrecep,
 }: ReclamantProps) {
   return (
-    <div>
-      <div>
-        <span className="head">RECLAMANT</span>
+    <div className="text-xs -mt-1">
+      <div className="text-center bg-slate-400">
+        <span >RECLAMANT</span>
       </div>
       <div>
-        <div className="">
+        <div className="l2">
           <div>Nom Prenoms(s) : {nomprenom}</div>
           <div>Date et lieu de naissance : {datelieunaiss}</div>
+          </div>
+          <div className="l2">
           <div> Nom Prenoms(s) Père : {nomprenomspere}</div>
           <div> Nom Prenoms(s) Mère: {nomprenomsmere}</div>
+          </div>
           <div>N° électeur (identifiant unique): {numelecteur}</div>
-        </div>
+      
         <div>
           {" "}
           Réf. Récépissé de recensement (date de recensement; code et libellé du

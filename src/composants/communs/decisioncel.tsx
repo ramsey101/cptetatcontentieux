@@ -12,7 +12,7 @@ export default function Decisioncel({
   argumentdec,
 }: DecisionProps) {
   return (
-    <div>
+    <div className="text-xs">
       <table>
         <th className="head">Proposition de DECISION de la CEL</th>
       </table>

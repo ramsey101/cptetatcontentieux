@@ -18,15 +18,19 @@ export default function Personnevisee({
   statutpv,
 }: PersonneviseeProps) {
   return (
-    <div>
-      <div>
-        <span className="head">PERSONNE VISEE</span>
+    <div className="text-xs">
+      <div className="text-center bg-slate-400">
+        <span >PERSONNE VISEE</span>
       </div>
       <div >
-        <div>Nom Prenoms(s) : {nomprenomspv} </div>
-        <div>Date et lieu de naissance : {datelieunaisspv} </div>
-        <div>Nom Prenoms(s) Père: {nomprenomsperepv}</div>
-        <div>Nom Prenoms(s) Mère : {nomprenomsmerepv}</div>
+        <div className="l2">
+          <div>Nom Prenoms(s) : {nomprenomspv} </div>
+          <div>Date et lieu de naissance : {datelieunaisspv} </div>
+        </div>
+        <div className="l2">
+          <div>Nom Prenoms(s) Père: {nomprenomsperepv}</div>
+          <div>Nom Prenoms(s) Mère : {nomprenomsmerepv}</div>
+        </div>
       <div> N° électeur (identifiant unique): {numelecteurpv}</div>
       <div className="l5">
         <div >

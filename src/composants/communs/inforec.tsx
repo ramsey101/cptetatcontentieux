@@ -15,17 +15,14 @@ export default function Inforeclamation({
   typerec,
 }: InforeclamationProps) {
   return (
-    <div>
-      <div className="inforeclamation">
+    <div className="text-xs">
+      <div className="text-xs inforeclamation">
         <div>N° ordre: {ordre} </div>
         <div>Date: {date} </div>
         <div>Lieu de vote: {nomlv} </div>
       </div>
-      <div className="l4">
-        <div>(1)Type de réclamation: </div>
-        <div>
-          <p>{typerec}</p>
-        </div>
+      <div className="text-xs l4">
+        <div className="text-xs">(1)Type de réclamation: <p>{typerec}</p> </div>
       </div>
       <br />
     </div>

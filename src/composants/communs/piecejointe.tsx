@@ -6,7 +6,7 @@ type PiecejointeProps = {
 export default function Piecejointe({ piecesjointes }: PiecejointeProps) {
   return (
     <>
-      <table className="tablepj">
+      <table className="text-xs tablepj">
         <thead>
           <tr>
             <th>Pièce Jointes</th>
