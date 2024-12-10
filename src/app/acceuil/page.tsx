@@ -20,6 +20,7 @@ const mesdatas: DonneesForm = {
   nomprenomsperepv: "M. FABIO",
   nomprenomsmerepv: "M. FABIO",
   statutpv: "OMIS SUR LA LEP ou RECENSE",
+  datelieunaissrec: "17/12/2022",
   numelecteurrec: "1",
   numelecteurpv: "10555eud",
   piecesjointes: ["Acte de naissance", "Certificat de nationalité", "Acte de mariage", "Acte de naissance de l'enfant"],

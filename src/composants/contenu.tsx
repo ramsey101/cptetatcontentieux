@@ -12,7 +12,7 @@ type ContenuProps = {
 export default function Contenu({ children }: ContenuProps) {
 
     const opt = {
-        margin: 1,
+        margin: [0, 1, 1, 1],
         filename: "document.pdf",
         image: { type: "jpeg", quality: 0.98 },
         html2canvas: { scale: 2 },

@@ -13,26 +13,19 @@ export default function Decisioncel({
 }: DecisionProps) {
   return (
     <div className="text-xs">
-      <table>
-        <th className="head">Proposition de DECISION de la CEL</th>
-      </table>
+      <div className="text-center bg-slate-400">
+        Proposition de DECISION de la CEL
+      </div>
       <div className="l4">
-        <div className="container">
-          <div className="text">Statut de la decision de la CEL</div>
-        </div>
-        <div className="container">
-          <p>{decisioncel}</p>
+        <div >
+          <div className="text-xs">Statut de la decision de la CEL : {decisioncel}</div>
         </div>
       </div>
-      <table className="argrec">
-        <thead className="arg">Arguments fondant la décision</thead>
-        <p>{argumentdec}</p>
-      </table>
+      <div className="text-xs">
+        <div className="font-bold">Arguments fondant la décision </div>
+        <div>{argumentdec}</div>
+      </div>
       <br />
-
-      <br />
-      <br />
-
       <div>
         <span className="head">Le Bureau de la CEL</span>
       </div>

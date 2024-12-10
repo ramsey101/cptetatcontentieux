@@ -34,10 +34,7 @@ export default function Personnevisee({
       <div> N° électeur (identifiant unique): {numelecteurpv}</div>
       <div className="l5">
         <div >
-          <div className="text">Statut de la personne visee :</div>
-        </div>
-        <div >
-          <p>{statutpv}</p>
+          <div className="text-xs">Statut de la personne visee : {statutpv}</div>
         </div>
       </div>
       </div>

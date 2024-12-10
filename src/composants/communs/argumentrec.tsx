@@ -1,15 +1,16 @@
-'use client';
+"use client";
 type ArgumentrecProps = {
-    argumentrec: string
-}
+  argumentrec: string;
+};
 
-import React from 'react'
+import React from "react";
 
-export default function Argumentrec({argumentrec}: ArgumentrecProps) {
-    return (
-         <table className="text-xs argrec">
-        <thead className="arg">Argument de la réclamation</thead>
-        <p>{argumentrec}</p>
-      </table>
-    )
+export default function Argumentrec({ argumentrec }: ArgumentrecProps) {
+  return (
+    <div className="text-xs">
+      <div className="font-bold">
+        Argument de la réclamation : {argumentrec}
+      </div>
+    </div>
+  );
 }
