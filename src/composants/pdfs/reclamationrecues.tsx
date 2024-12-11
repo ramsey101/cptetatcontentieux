@@ -1,8 +1,9 @@
 "use client";
 import Carto from "../communs/carto";
 import Tabreclamation from "../communs/tabreclamation";
-import Contenu from "../contenu";
 import { DonneesReclamations } from "@/types/donneesreclamation";
+import Contenuh from "../contenuh";
+import Entete from "../communs/entete";
 
 export default function Reclamationsrecues({
   mesdatas,
@@ -12,6 +13,7 @@ export default function Reclamationsrecues({
   const content = () => {
     return (
       <>
+       <Entete />
         <div className="entete">
           <p> LISTE RECAPITULATIVE DES RECLAMATIONS RECUES</p>
           <br />
@@ -23,6 +25,7 @@ export default function Reclamationsrecues({
         />
         <Tabreclamation
           objetrec={mesdatas.objetrec}
+          date={mesdatas.date}
           nomprenomsrec={mesdatas.nomprenomsrec}
           datenaissrec={mesdatas.datenaissrec}
           lieunaissrec={mesdatas.lieunaissrec}
@@ -34,5 +37,5 @@ export default function Reclamationsrecues({
     );
   };
 
-  return <Contenu>{content()}</Contenu>;
+  return <Contenuh>{content()}</Contenuh>;
 }

@@ -35,7 +35,7 @@ export default function Reclamant({
       
         <div>
           {" "}
-          Réf. Récépissé de recensement (date de recensement; code et libellé du
+          Réf. Récépissé de recensement <br />(date de recensement; code et libellé du
           centre de recensement)* : {refrecep}{" "}
         </div>
       </div>

@@ -3,21 +3,21 @@
 import { Button } from "antd";
 import Link from "next/link";
 
-
 import ReactDOMServer from "react-dom/server";
 
 type ContenuProps = {
   children: JSX.Element;
+  
 };
 
-export default function Contenu({ children }: ContenuProps ) {
+export default function Contenuh({ children }: ContenuProps) {
 
     const opt = {
         margin: [0, 1, 1, 1],
-        filename: "{titre}.pdf",
+        filename: "document.pdf",
         image: { type: "jpeg", quality: 0.98 },
         html2canvas: { scale: 2 },
-        jsPDF: { unit: "in", format: "letter", orientation: "portrait" },
+        jsPDF: { unit: "in", format: "letter", orientation: "landscape" },
       };
       
     const handlePrint = async () => {
