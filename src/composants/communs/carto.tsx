@@ -13,7 +13,7 @@ export default function Carto({ region, departement, cel }: CartoProps) {
         <div>REGION: {region}</div>
         <div>DEPARTEMENT: {departement}</div>
       </div>
-      <div>COMMISSION ELECTORALE LOCALE : {cel}</div>
+      <div className="text-xs">COMMISSION ELECTORALE LOCALE : {cel}</div>
       <br />
     </div>
   );

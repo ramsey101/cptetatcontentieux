@@ -9,6 +9,7 @@ import Personnevisee from "../communs/personnevisee";
 import Piecejointe from "../communs/piecejointe";
 import Reclamant from "../communs/reclamant";
 import Signrecep from "../communs/signrecep";
+import Entete from "../communs/entete";
 
 export default function Recepisse({
   mesdatas,
@@ -18,6 +19,7 @@ export default function Recepisse({
   const content = () => {
     return (
       <>
+      <Entete />
        <div className="entete">
           <p> RECEPISSE DE DEPOT DE RECLAMATION</p>
           <br />
@@ -25,7 +27,6 @@ export default function Recepisse({
         <Carto region={mesdatas.region} departement={mesdatas.departement} cel={mesdatas.cel} />
         <Inforec
           ordre={mesdatas.ordre}
-          daterecl={mesdatas.daterecl}
           nomlv={mesdatas.nomlv}
           typerec={mesdatas.typerec}
         />
