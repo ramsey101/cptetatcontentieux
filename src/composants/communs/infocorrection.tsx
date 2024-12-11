@@ -9,21 +9,27 @@ type InforeclamationProps = {
 
 export default function Infocorrection({
   ordre,
-  date,
   numelecteurpv,
 }: InforeclamationProps) {
   return (
-    <div>
-      <div className="l3">
+    <>
+    <div className="text-center bg-slate-400">
+        <p>DONNEES FIGURANT SUR LA LISTE PROVISOIRE AFFICHEE</p>
+      </div>
+    <div className="flex justify-between ">
+      <div className="">
         <div>N° ordre: {ordre}</div>
         <div>N° electeur: {numelecteurpv}</div>
-        <div>Date: {date}</div>
+      </div>
+      <div className="">
         <div>Nom : </div>
         <div>Prenom: </div>
+      </div>
+      <div className="">
         <div>Date de naissance: </div>
         <div>Lieu de naissance: </div>
       </div>
-      <br />
-    </div>
+    </div><br />
+    </>
   );
 }

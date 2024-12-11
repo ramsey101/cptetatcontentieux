@@ -1,9 +1,12 @@
 "use client";
 
 import { DonneesReintegration } from "@/types/donneesreintegration";
-import Contenu from "../contenu";
+import Contenuh from "../contenuh";
 import Signrecep from "../communs/signrecep";
 import Inforeintegration from "../communs/inforeintegration";
+import Entete from "../communs/entete";
+import Cartofc from "../communs/cartofc";
+import Signaturebureaucel from "../communs/signaturebureaucel";
 
 export default function Reintegration({
   mesdatas,
@@ -13,18 +16,26 @@ export default function Reintegration({
   const content = () => {
     return (
       <>
-        <div className="entete">
-          <p>
-            FICHE INDIVIDUELLE DE REINTEGRATION D ELECTEUR REJETÉ PAR ERREUR DE
-            LA LEP
+        <Entete />
+        <div >
+          <p className="entete underline">
+            FICHE INDIVIDUELLE D INSCRIPTION REINTEGRATION D ELECTEUR REJETE PAR
+            ERREUR DE LA LISTE ELECTORALE PROVISOIRE (Motif de rejet avéré
+            erroné)
+          </p>
+          <p className="text-xs text-red-600 text-center">
+            UNIQUEMENT POUR LES PERSONNES FIGURANT SUR LA LISTE PROVISOIRE DES
+            REQUERANTS REJETES AVEC LE MOTIF "Décès présumé" ou "Interdiction
+            des droits civiques et politiques"
           </p>
           <br />
         </div>
+        <Cartofc />
         <Inforeintegration />
-        <Signrecep />
+        <Signaturebureaucel />
       </>
     );
   };
 
-  return <Contenu>{content()}</Contenu>;
+  return <Contenuh>{content()}</Contenuh>;
 }

@@ -1,11 +1,12 @@
 "use client";
-import Carto from "../communs/carto";
-import Contenu from "../contenu";
+import Cartofc from "../communs/cartofc";
+import Contenuh from "../contenuh";
 import { DonneesCorrection } from "@/types/donneescorrection";
 import Correctionidentitenew from "../communs/correctionidentitenew";
 import Changementlv from "../communs/changementlv";
 import Infocorrection from "../communs/infocorrection";
 import Signaturebureaucel from "../communs/signaturebureaucel";
+import Entete from "../communs/entete";
 
 export default function Correction({
   mesdatas,
@@ -15,15 +16,13 @@ export default function Correction({
   const content = () => {
     return (
       <>
+      <Entete />
         <div className="entete">
           <p> CORRECTION DE MENTIONS PERSONNELLES SUR LA LISTE ELECTORALE</p>
-          <br />
           <p> FICHE INDIVIDUELLE</p>
-          <br />
         </div>
-        <Carto
-          region={mesdatas.region}
-          departement={mesdatas.departement}
+        <Cartofc
+          date={mesdatas.date}
           cel={mesdatas.cel}
         />
         <Infocorrection ordre={""} nomlv={""} />
@@ -34,5 +33,5 @@ export default function Correction({
     );
   };
 
-  return <Contenu>{content()}</Contenu>;
+  return <Contenuh>{content()}</Contenuh>;
 }

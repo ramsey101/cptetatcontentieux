@@ -22,12 +22,11 @@ export type CorrectionidentiteProps = {
 
 export default function Changementlv({}) {
   return (
-    <div>
-      <div>
-        <span className="head">
-           CHANGEMENT DU LIEU DE VOTE
-        </span>
+    <>
+      <div className="text-center bg-slate-400">
+        <p>CHANGEMENT DU LIEU DE VOTE</p>
       </div>
+
       <div className="info1">
         <div>Code de 12 chiffres de l actuel LV: {} </div>
         <div>Code de 12 chiffres du nouveau LV: {}</div>
@@ -37,6 +36,6 @@ export default function Changementlv({}) {
         <div>Libelle du nouveau LV: {}</div>
       </div>
       <br />
-    </div>
+    </>
   );
 }
